@@ -1,0 +1,5 @@
+<view class="about">
+<view class="aboutText">
+   {{name}}1.0版本，版权所有，请勿用作其他商业用途。
+</view>
+</view>

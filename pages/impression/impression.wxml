@@ -1,0 +1,32 @@
+<!-- http://www.cnblogs.com/gjack/p/7440968.html -->
+<view class="container">
+
+  <view class="portraitItem">
+    <!-- <image class="portrait" src="{{logoUrl}}"></image> -->
+    <image class="portrait" src="../../image/bolang_logo.png"></image>
+    <image class="qrcodeBtn" src="../../image/qrcode-btn.png" bindtap="toQrCode"></image>
+    <text class="mainTitle">猜猜大家用哪三个词评价我们？</text>
+    <text class="subTitle">选出你心中代表博浪的三个词</text>
+  </view>
+
+   <view class="table">
+    <block wx:for="{{listData}}" wx:for-item="item">
+      <view class="tr">
+        <block wx:for="{{item.rowData}}" wx:for-item="cell">
+          <view wx:if="{{cell.voteNum==0}}" class="td normal {{cell.code==voteCodeStr[0] || cell.code==voteCodeStr[1] ? 'voted' : ''}}" bindtap="vote" data-code="{{cell.code}}">
+            <text>{{cell.text}}</text>
+          </view>
+          <view wx:else class="td hasNum {{cell.hasVoted ? 'voted' : 'not-voted'}}">
+            <text class="voteNum">{{cell.voteNum}}</text>
+            <text class="voteText">{{cell.text}}</text>
+          </view>
+        </block>
+      </view>
+    </block>
+  </view> 
+
+  <view class="classname">
+    <button open-type="share" class="zhuanfa_btn">转发到群聊</button>
+  </view>
+
+</view>

@@ -1,0 +1,95 @@
+ .type{
+     background: white; 
+   
+} 
+
+.typeItem{
+  /* margin: 10rpx 10rpx 10rpx 10rpx ; */
+  width: 100%;
+  /* height: 750rpx;  */
+  padding-top:46rpx;
+
+}
+
+.typeName{
+  font-size:32rpx;
+  margin-top: 48rpx;
+  margin-left: 35rpx;
+  /* display: block; */
+  font-weight: 600;
+
+}
+
+
+.more{
+  height: 23rpx;
+  width: 13rpx;
+  margin-left: 15rpx;
+}
+
+.productList {
+  margin: 40rpx 32rpx 0 32rpx;   
+}
+
+.productList li{
+  /* margin:190rpx 5rpx 0 0; */
+  float:left;
+  list-style-type:none;   
+}
+
+.productList li:nth-child(2n-1){
+  /* margin:190rpx 5rpx 0 0; */
+  float:left;
+  
+}
+
+.productList li:nth-child(2n){
+  /* margin:190rpx 5rpx 0 0; */
+  float:right;  
+}
+
+ .productList li:nth-child(n+3){  
+  margin-top: 35rpx;
+} 
+
+.productList li image{
+  width:335rpx;
+  height:188rpx;
+  border-radius:5px;   
+  
+}
+
+.contMess text{
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.contMess .Mess1{
+    display:block;
+    color:#222222; 
+    font-size: 28rpx;
+    margin-top:20rpx; 
+} 
+
+.contMess .Mess2{
+      font-size:26rpx;
+      color:#979797; 
+      display:block;
+      margin-top: 13rpx;
+      /* margin-top:75px; */
+} 
+
+.picCell{
+  width:335rpx;
+  height: 188rpx;
+}
+
+.seperator{
+  height: 1rpx;    
+  width:100%;
+  margin-top:35rpx;
+}
+
+

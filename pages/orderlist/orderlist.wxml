@@ -1,0 +1,75 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">待付款</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">待发货</view>
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">待收货</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}rpx" bindchange="bindChange">
+  <block wx:for="{{[allOrders, toPayOrders, toDeliveryOrder, toReceiptOrdders]}}" wx:for-item="orders">
+    <swiper-item>
+
+      <block wx:for="{{orders}}" wx:for-item="cell" wx:key="orderId">
+        <view class="order-item" id="orderItem">
+          <view class="companyInfo">
+            <image src='../../image/gm_logo.png'></image>
+            <text>{{xcxName}}</text>
+            <text class="orderState">{{cell.stateStr}}</text>
+          </view>
+
+          <image class="seperator_short" src="../../image/seperator_light.png"></image>
+          <view class="clear"></view>
+
+          <view class="productInfo" bindtap="toOrderDetail" data-id="{{cell.orderId}}">
+            <view class="pImg">
+              <image src="{{cell.orderItems[0].product.picUrl}}"></image>
+            </view>
+            <text class="pName">{{cell.orderItems[0].product.name}}</text>
+            <text class="pDesc">{{cell.orderItems[0].product.description}}</text>
+            <view class="priceInfo">
+              <text class="pPrice">¥{{cell.orderItems[0].productPrice}}</text>
+              <text class="pQuantity">×{{cell.orderItems[0].quantity}}</text>
+            </view>
+          </view>
+
+          <image class="seperator_short" src="../../image/seperator_light.png"></image>
+          <view class="clear"></view>
+
+          <view class="sumStr">
+            <text class="sumText">共1件,合计:¥{{cell.orderPrice}}</text>
+          </view>
+
+          <image class="seperator_short" src="../../image/seperator_light.png"></image>
+           <view class="clear"></view> 
+
+          <view class="opBtn" wx:if="{{cell.state==1}}">
+            <text class="payStr" bindtap="payNow" data-id="{{cell.orderNo}}">立即支付</text>
+            <text class="opStr" bindtap="cancelOrder" data-id="{{cell.orderId}}">取消订单</text>
+          </view>
+          <view class="opBtn" wx:if="{{cell.state==2}}">
+            <text class="opStr" bindtap="remindDelivery" data-id="{{cell.orderId}}">提醒发货</text>
+          </view>
+          <view class="opBtn" wx:if="{{cell.state==4}}">
+            <text class="payStr" bindtap="confirmReceipt" data-id="{{cell.orderId}}">确认收货</text>
+          </view>
+        </view>
+      </block>
+
+       <view class="noOrders {{hasOrder||!loadingFinish ? 'noOrderHide':''}}">
+        暂无订单
+      </view> 
+      
+    </swiper-item>
+  </block>
+
+
+  <!-- <swiper-item>
+    <view>待付款</view>
+  </swiper-item>
+  <swiper-item>
+    <view>待发货</view>
+  </swiper-item>
+  <swiper-item>
+    <view>待收货</view>
+  </swiper-item> -->
+</swiper>

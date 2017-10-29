@@ -1,0 +1,32 @@
+
+
+
+<view class="container">
+  <view class="title">
+    <view class="cancelnav" bindtap="tofind">
+      <text class="cancel">取消</text>
+    </view>
+
+    <view bindtap="toSubmit" class="submitview">
+      <text class="submit">确认</text>
+    </view>
+  </view>  
+
+  <view class="textcont">
+   <textarea placeholder="发表自己的观点" name="content" maxlength="1024" bindinput="contentInput" value="{{content}}"></textarea>
+  </view>
+
+  <view class="addImg {{imgClassName}}" bindtap="chooseImageTap" >
+    <image src="../../image/find_addimg.png" />
+    
+  </view>
+  <view class="uploaded">
+    <block wx:for="{{imgUrlArr}}" wx:key="id" wx:for-item="item" >
+      <image src="{{item}}?imageView2/1/w/190/h/190" bindtap="previewImage" data-src="{{item}}"/>
+      <image src="../../image/minus_icon.png" class="delImg" bindtap="deleteImg" data-imgid="{{id}}" />
+    </block>
+    <image class="addbtn {{imgClassName}}" src="../../image/plus_icon.png" bindtap="chooseImageTap" />
+
+  </view>
+</view>
+  

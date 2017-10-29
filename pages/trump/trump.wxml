@@ -1,0 +1,95 @@
+<import src="../../common/template.wxml"/>
+
+<view class="{{style}}">
+    <view class="topView">
+        <!-- <image class="logo" src="../../image/logo.png"></image>   -->
+       <!-- <navigator url="../search/search"> -->
+         <!-- <image class="search" src="../../image/search.png"></image>  -->
+       <!-- </navigator> -->
+    </view>
+
+    <image class="videoplay" bindtap="toDetail" src="../../image/videoplay.png" style="visibility:{{videoplayVisibity}}"></image>
+
+    <view class="TopPicBg">
+        <image bindtap="toDetail" src="{{bg}}" />
+    </view> 
+
+    <swiper indicator-dots="{{indicatorDots}}" bindchange="changeSwiper">
+            <block wx:for="{{trumpArr}}" wx:key="picUrl">    
+               <view wx:if="{{item.pageType==undefined}}"> 
+                <navigator url="../Play/play?productId={{item.productId}}" hover-class="none">   
+                  <swiper-item >                
+                    <image class="PicImg" src="{{item.picUrl}}" />                
+                    <view class="swiper-item-rec-single">                                                                           
+                        <view class="contMess">
+                            <image class="line1" src="../../image/line.png"/>
+                             <text class="Mess1">{{item.name}}</text>
+                             <image class="line2" src="../../image/line.png"/>
+                             <view class="text">
+                              <text class="Mess2">{{item.slogan}}</text>
+                              <text class="Mess3">{{item.desc}}</text>
+                             </view>
+                        </view>                
+                    </view> 
+                 </swiper-item>
+                </navigator>
+              </view> 
+               <view wx:if="{{item.pageType==2}}">                 
+                  <swiper-item>      
+                      <view class="swiper-item-rec-triple"> 
+                        <navigator url="../products/products" hover-class="none">
+                          <view class="typeName">
+                            <text>{{item.name}}</text>     
+                            <image class="more" src="../../image/more.png"></image>        
+                          </view>     
+                        </navigator>                                                                    
+                        <view class="productList">       
+                         <ul>
+                          <block wx:for="{{item.productArr}}" wx:for-item="cell" wx:key="picUrl"> 
+                            <li>                               
+                                <image src="{{cell.picUrl}}" bindtap="toDetail" data-id="{{cell.productId}}"/>
+                                <view class="contMess" bindtap="toDetail" data-id="{{cell.productId}}">
+                                  <text class="Mess1">{{cell.name}}</text>
+                                  <text class="Mess2">{{cell.desc}}</text>   
+                                </view>                         
+                            </li>
+                          </block>                          
+                         </ul>          
+                        </view>
+                      </view>
+                      
+                  </swiper-item>               
+              </view>           
+               <view wx:if="{{item.pageType==3}}">                 
+                  <swiper-item>          
+                      <view class="swiper-item-rec-fourth">    
+                      <navigator url="../products/products" hover-class="none">
+                        <view class="typeName">
+                          <text>{{item.name}}</text>     
+                          <image class="more" src="../../image/more.png"></image>        
+                        </view>
+                      </navigator>                                                                            
+                         <view class="productList">        
+                         <ul>
+                          <block wx:for="{{item.productArr}}" wx:for-item="cell" wx:key="picUrl">
+                              <li>                               
+                                  <view class="picCell" bindtap="toDetail" data-id="{{cell.productId}}">
+                                    <image src="{{cell.picUrl}}" />
+                                  </view>    
+                                  <view class="contMess" bindtap="toDetail" data-id="{{cell.productId}}">                            
+                                    <text class="Mess1">{{cell.name}}</text>
+                                    <text class="Mess2">{{cell.desc}}</text>        
+                                  </view>                             
+                              </li>
+                          </block>                          
+                         </ul>          
+                         </view> 
+                      </view> 
+                  </swiper-item>               
+              </view>                     
+            </block>
+        </swiper>
+    
+     
+       
+</view>

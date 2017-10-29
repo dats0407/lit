@@ -1,0 +1,90 @@
+.addrInfo{
+  background: white;
+  margin-top: 35rpx;
+}
+
+.addrInfo .item{
+  padding:25rpx;
+  font-size: 26rpx;
+}
+
+.addrInfo input{
+  float: right;
+  margin-right: 80rpx;
+  width: 450rpx;
+
+}
+
+.addrInfo .selectArea{
+  float: right;
+  margin-right: 80rpx;
+  width: 450rpx;
+}
+
+button{
+  margin-top: 55rpx;
+  width: 90%;
+  height: 90rpx;
+}
+
+.seperator_short{
+  height:1px;
+  width: 725rpx;
+  padding-left: 25rpx;
+  float:left;
+}
+
+
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+} 
+
+.citypickers{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  background-color: red;
+}
+
+.citybody {
+  position: fixed;
+  bottom: 0px;
+}
+
+.cityheader {
+  position: absolute;
+  top:0px;
+  width: 100%;
+  z-index: 4;
+}
+
+.city-cancel {
+  float: left;
+  margin: 20rpx;
+  color: #818181;
+}
+
+.city-true {
+  float: right;
+  margin: 20rpx;
+  color: #2FB42E
+}
+
+.section .picker {
+  background-color: #fff;
+  border-bottom: 1px #d9d9d9 solid;
+  border-top: 1px #d9d9d9 solid;
+  padding: 20rpx;
+}

@@ -1,0 +1,819 @@
+/* 电子产品类样式 */
+.eproduct .trump{
+    position:relative;
+    width:100%;
+    height:100%;
+    /* overflow:hidden; */
+}
+.eproduct .topView{
+  margin-top: 36rpx;
+  display: none;
+}
+.eproduct .topView .logo{
+  width: 150rpx;
+  height: 43rpx; 
+  margin-left: 43rpx;
+  display:none; 
+}
+.eproduct .topView .search{
+  float: right;
+  width: 37rpx;
+  height: 38rpx;
+  margin-right: 31rpx;
+}
+.eproduct .videoplay{
+  position: absolute;
+  width:96rpx;
+  height: 96rpx;
+  top: 162rpx;left: 327rpx;
+  display:none;
+  
+}
+.eproduct .TopPicBg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;   
+    height: 100%;
+    z-index:-1;
+    /*display:none;*/
+
+}
+.eproduct .TopPicBg image{
+    width:100%;
+    height: 100%;
+    /* height:435rpx;   */
+}
+
+.eproduct swiper{
+    z-index:10;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: absolute; 
+    width:100%;     
+    height:93%;
+    top: 0px; 
+    /*background: linear-gradient(
+    to top,     
+    rgba(103, 106, 115, 1) 85%,     
+    rgba(103, 106, 115, 0.7) 90%, 
+    rgba(103, 106, 115, 0) 98%   
+    ); */
+    overflow:hidden;
+}
+.eproduct .contMess text{
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+
+.eproduct swiper .swiper-item-rec-single{  
+    text-align:center;  
+    height: 100%;  
+    width:660rpx;  
+    border-radius:0px; 
+    margin:2% 2% 2% 6%;
+}
+.eproduct .PicImg{
+    text-align: center;
+    position:absolute;
+    z-index: 12;
+    /* width:125px; */
+    /* height:175px; */
+    width:584rpx;
+    height:345rpx;
+    left:0; right:0; 
+    margin:15rpx auto;
+    border-radius:0px;
+    top:220rpx;
+}
+
+.eproduct swiper .swiper-item-rec-single .contMess{    
+    bottom:180rpx;
+    left:0px;
+    width:100%;    
+    font-size:13px; 
+    text-align:center;
+    position:absolute;
+    z-index: 1;   
+     
+} 
+
+.eproduct swiper .swiper-item-rec-single .contMess .Mess1{
+    display:block;
+    color:#363636; 
+    font-weight:900;
+    font-size: 42rpx;
+    margin-bottom:24rpx; 
+} 
+
+.eproduct swiper .swiper-item-rec-single .contMess .Mess2{
+      font-size:26rpx;
+      color:#5f5f5f; 
+      display:block;
+      margin-bottom: 22rpx;
+      /* margin-top:75px; */
+} 
+
+.eproduct swiper .swiper-item-rec-single .contMess .Mess3{
+      font-size:26rpx;
+      color:#5f5f5f; 
+      display:block;
+      /* margin-bottom: 8rpx; */
+      /* margin-top:75px; */
+} 
+
+.eproduct swiper .swiper-item-rec-triple{  
+    text-align:center;  
+    background:white;     
+    height:600rpx;  
+    width:686rpx;    
+    border-radius:15px;   
+    margin:146rpx auto;    
+}
+
+.eproduct swiper .swiper-item-rec-triple .typeName{
+  font-size:32rpx;
+  font-weight: 900;
+  color:black; 
+  position: absolute;
+  top: 206rpx;left: 0;right: 0; 
+}
+.eproduct .more{
+  height: 23rpx;
+  width: 13rpx;
+  margin-left: 15rpx;
+}
+
+.eproduct swiper .swiper-item-rec-triple .productList {
+  /* margin: 150rpx 0 0 35rpx; */
+  position: absolute;
+  top: 296rpx;
+  width: 620rpx;
+  height: 367rpx;
+  left: 65rpx;
+}
+
+.eproduct swiper .swiper-item-rec-triple .productList li{  
+   float:left;   
+   width: 196rpx;
+}
+
+.eproduct swiper .swiper-item-rec-triple .productList li:nth-child(2){  
+   margin: 0 16rpx 0 16rpx;
+}
+
+.eproduct swiper .swiper-item-rec-triple .productList li .Mess1{  
+  font-size:28rpx;
+  margin-top: 5rpx;
+  color: #222222;
+  text-align: left  ;
+}
+
+.eproduct swiper .swiper-item-rec-triple .productList li .Mess2{  
+  font-size:26rpx;
+  margin-top: 5rpx;
+  color: #979797;
+  text-align: left;
+}
+
+.eproduct swiper .swiper-item-rec-triple .productList li image{
+  width:196rpx;
+  height:276rpx;
+  border-radius: 5px;
+  
+}
+
+
+.eproduct swiper .swiper-item-rec-fourth{  
+    text-align:center;  
+    background:white;     
+    height:746rpx;  
+    width:686rpx;    
+    border-radius:15px;   
+    margin:0 auto;     
+}
+
+.eproduct swiper .swiper-item-rec-fourth .typeName{
+  font-size:32rpx;
+  font-weight: 900;
+  color:black; 
+  position: absolute;
+  top: 60rpx;left: 0;right: 0; 
+}
+
+.eproduct swiper .swiper-item-rec-fourth .productList {
+  /* margin: 150rpx 0 0 35rpx; */
+  position: absolute;
+  top: 150rpx;
+  width: 580rpx;
+  height: 529rpx;
+  left: 85rpx;
+}
+
+.eproduct swiper .swiper-item-rec-fourth .productList li:nth-child(2n-1){  
+   float:left;   
+}
+
+.eproduct swiper .swiper-item-rec-fourth .productList li:nth-child(2n){  
+   float:right;   
+}
+
+.eproduct swiper .swiper-item-rec-fourth .productList li:nth-child(n+3){  
+   margin-top: 37rpx;
+}
+
+.eproduct swiper .swiper-item-rec-fourth .productList li .picCell{
+  height: 152rpx;
+}
+
+.eproduct swiper .swiper-item-rec-fourth .productList li .Mess1{  
+  font-size:28rpx;
+  margin-top: 16rpx;
+  color: #222222;
+  text-align: left;
+  /* font-weight: 300; */
+}
+
+.eproduct swiper .swiper-item-rec-fourth .productList li .Mess2{
+  
+  font-size:26rpx;
+  margin-top: 5rpx;
+  color: #979797;
+  text-align: left;
+}
+
+.eproduct swiper .swiper-item-rec-fourth .productList li image{
+  width:271rpx;
+  height:152rpx;
+  border-radius: 5px;
+  
+}
+
+/* 饮食类样式 */
+.food .trump{
+    position:relative;
+    width:100%;
+    height:100%;
+    /* overflow:hidden; */
+}
+.food .topView{
+  margin-top: 36rpx;
+  display: none;
+}
+.food .topView .logo{
+  width: 150rpx;
+  height: 43rpx; 
+  margin-left: 43rpx;
+  display:none; 
+}
+.food .topView .search{
+  float: right;
+  width: 37rpx;
+  height: 38rpx;
+  margin-right: 31rpx;
+}
+.food .videoplay{
+  position: absolute;
+  width:96rpx;
+  height: 96rpx;
+  top: 162rpx;left: 327rpx;
+  display:none;
+  
+}
+.food .TopPicBg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;   
+    height: 100%;
+    z-index:-1;
+    /*display:none;*/
+
+}
+.food .TopPicBg image{
+    width:100%;
+    height: 100%;
+    /* height:435rpx;   */
+}
+
+.food swiper{
+    z-index:10;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: absolute; 
+    width:100%;     
+    height:93%;
+    top: 0px; 
+    /*background: linear-gradient(
+    to top,     
+    rgba(103, 106, 115, 1) 85%,     
+    rgba(103, 106, 115, 0.7) 90%, 
+    rgba(103, 106, 115, 0) 98%   
+    ); */
+    overflow:hidden;
+}
+.food .contMess text{
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+
+.food swiper .swiper-item-rec-single{  
+    text-align:center;  
+    background:white;     
+    height: 100%;  
+    width:660rpx;  
+    border-radius:0px; 
+    margin:2% 2% 2% 6%;
+}
+.food .PicImg{
+    text-align: center;
+    position:absolute;
+    z-index: 12;
+    /* width:125px; */
+    /* height:175px; */
+    width:600rpx;
+    height:664rpx;
+    left:0; right:0; 
+    margin:15rpx auto;
+    border-radius:0px;
+
+}
+
+.food swiper .swiper-item-rec-single .contMess{    
+    left:-7rpx;
+    width:100%;
+    font-size:13px;
+    text-align:center;
+    position:relative;
+    z-index:1;
+    padding-top:735rpx;
+} 
+
+.food swiper .swiper-item-rec-single .contMess .line1{    
+    float: left;
+    margin-right: 20rpx;
+    margin-top: 17rpx;
+    height:5rpx;
+    width:150rpx;  
+    margin-left: 30rpx;   
+    display:block;
+} 
+
+.food swiper .swiper-item-rec-single .contMess .line2{    
+    float: left;
+    margin-left: 15rpx;
+    margin-top: 7px;
+    height:5rpx;
+    width:150rpx;     
+    display: block;
+}
+
+.food swiper .swiper-item-rec-single .contMess .Mess1{
+    display:block;
+    color:#545454; 
+    font-weight:900;
+    font-size: 38rpx;
+    margin-bottom:24rpx; 
+    float:left;
+} 
+
+.food swiper .swiper-item-rec-single .contMess .text{
+  margin-top: 80rpx;
+}
+
+.food swiper .swiper-item-rec-single .contMess .Mess2{
+      font-size:28rpx;
+      color:#545454; 
+      display:block;
+      margin-bottom: 22rpx;
+      /* margin-top:75px; */
+} 
+
+.food swiper .swiper-item-rec-single .contMess .Mess3{
+      font-size:28rpx;
+      color:#545454; 
+      display:block;
+      /* margin-bottom: 8rpx; */
+      /* margin-top:75px; */
+} 
+
+.food swiper .swiper-item-rec-triple{  
+    text-align:center;  
+    background:white;     
+    height:600rpx;  
+    width:686rpx;    
+    border-radius:15px;   
+    margin:146rpx auto;    
+}
+
+.food swiper .swiper-item-rec-triple .typeName{
+  font-size:32rpx;
+  font-weight: 900;
+  color:black; 
+  position: absolute;
+  top: 206rpx;left: 0;right: 0; 
+}
+.food .more{
+  height: 23rpx;
+  width: 13rpx;
+  margin-left: 15rpx;
+}
+
+.food swiper .swiper-item-rec-triple .productList {
+  /* margin: 150rpx 0 0 35rpx; */
+  position: absolute;
+  top: 296rpx;
+  width: 620rpx;
+  height: 367rpx;
+  left: 65rpx;
+}
+
+.food swiper .swiper-item-rec-triple .productList li{  
+   float:left;   
+   width: 196rpx;
+}
+
+.food swiper .swiper-item-rec-triple .productList li:nth-child(2){  
+   margin: 0 16rpx 0 16rpx;
+}
+
+.food swiper .swiper-item-rec-triple .productList li .Mess1{  
+  font-size:28rpx;
+  margin-top: 5rpx;
+  color: #222222;
+  text-align: left  ;
+}
+
+.food swiper .swiper-item-rec-triple .productList li .Mess2{  
+  font-size:26rpx;
+  margin-top: 5rpx;
+  color: #979797;
+  text-align: left;
+}
+
+.food swiper .swiper-item-rec-triple .productList li image{
+  width:196rpx;
+  height:276rpx;
+  border-radius: 5px;
+  
+}
+
+
+.food swiper .swiper-item-rec-fourth{  
+    text-align:center;  
+    background:white;     
+    height:746rpx;  
+    width:686rpx;    
+    border-radius:15px;   
+    margin:0 auto;     
+}
+
+.food swiper .swiper-item-rec-fourth .typeName{
+  font-size:32rpx;
+  font-weight: 900;
+  color:black; 
+  position: absolute;
+  top: 60rpx;left: 0;right: 0; 
+}
+
+.food swiper .swiper-item-rec-fourth .productList {
+  /* margin: 150rpx 0 0 35rpx; */
+  position: absolute;
+  top: 150rpx;
+  width: 580rpx;
+  height: 529rpx;
+  left: 85rpx;
+}
+
+.food swiper .swiper-item-rec-fourth .productList li:nth-child(2n-1){  
+   float:left;   
+}
+
+.food swiper .swiper-item-rec-fourth .productList li:nth-child(2n){  
+   float:right;   
+}
+
+.food swiper .swiper-item-rec-fourth .productList li:nth-child(n+3){  
+   margin-top: 37rpx;
+}
+
+.food swiper .swiper-item-rec-fourth .productList li .picCell{
+  height: 152rpx;
+}
+
+.food swiper .swiper-item-rec-fourth .productList li .Mess1{  
+  font-size:28rpx;
+  margin-top: 16rpx;
+  color: #222222;
+  text-align: left;
+  /* font-weight: 300; */
+}
+
+.food swiper .swiper-item-rec-fourth .productList li .Mess2{
+  
+  font-size:26rpx;
+  margin-top: 5rpx;
+  color: #979797;
+  text-align: left;
+}
+
+.food swiper .swiper-item-rec-fourth .productList li image{
+  width:271rpx;
+  height:152rpx;
+  border-radius: 5px;
+  
+}
+
+
+/* 默认样式 */
+.default .trump{
+    position:relative;
+    width:100%;
+    height:100%;
+    /* overflow:hidden; */
+}
+
+.default .topView{
+  margin-top: 36rpx;
+}
+.default .topView .logo{
+  width: 150rpx;
+  height: 43rpx; 
+  margin-left: 43rpx;
+
+}
+.default .topView .search{
+  float: right;
+  width: 37rpx;
+  height: 38rpx;
+  margin-right: 31rpx;
+}
+.default .videoplay{
+  position: absolute;
+  width:96rpx;
+  height: 96rpx;
+  top: 162rpx;left: 327rpx
+  
+}
+.default .TopPicBg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;   
+    height: 414rpx;
+    z-index:-1;
+}
+.default .TopPicBg image{
+    width:100%;
+    /* height:435rpx;   */
+}
+
+/* .shade{  
+  background: linear-gradient(
+    to bottom, 
+    rgba(103, 106, 115,0) 0%, 
+    rgba(103, 106, 115,0.7) 100%
+  );
+  height: 39rpx;
+  z-index:9;
+  position:absolute;   
+  top:0;bottom:0;left:0;right:0;  
+} */
+
+/* .content{
+    
+} */
+
+.default swiper{
+    /* height:100%; */   
+    z-index:10;
+    top : 308rpx;
+    position: absolute; 
+    width:100%;     
+    height:801rpx;   
+    background: linear-gradient(
+    to top,     
+    rgba(103, 106, 115, 1) 85%,     
+    rgba(103, 106, 115, 0.7) 90%, 
+    rgba(103, 106, 115, 0) 98%   
+    ); 
+   overflow:hidden;
+}
+.default .contMess text{
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+
+.default swiper .swiper-item-rec-single{  
+    text-align:center;  
+    background:white;     
+    height:600rpx;  
+    width:686rpx;    
+    border-radius:15px;   
+    margin:146rpx auto;     
+}
+.default .PicImg{
+    text-align: center;
+    position:absolute;
+    z-index: 12;
+    /* width:125px; */
+    /* height:175px; */
+    width:260rpx;
+    height:364rpx;
+    border-radius: 5px;
+    left:0; right:0; 
+    margin:66rpx auto;
+    
+}
+
+.default swiper .swiper-item-rec-single .contMess{    
+    bottom:155rpx;
+    left:0px;
+    width:100%;    
+    font-size:13px; 
+    text-align:center;
+    position:absolute;
+    z-index: 1;   
+     
+} 
+
+.default swiper .swiper-item-rec-single .contMess .Mess1{
+    display:block;
+    color:#222222; 
+    font-weight:900;
+    font-size: 34rpx;
+    margin-bottom:24rpx; 
+} 
+
+.default swiper .swiper-item-rec-single .contMess .Mess2{
+      font-size:28rpx;
+      color:#979797; 
+      display:block;
+      margin-bottom: 22rpx;
+      /* margin-top:75px; */
+} 
+
+.default swiper .swiper-item-rec-single .contMess .Mess3{
+      font-size:28rpx;
+      color:#979797; 
+      display:block;
+      /* margin-bottom: 8rpx; */
+      /* margin-top:75px; */
+} 
+
+.default swiper .swiper-item-rec-triple{  
+    text-align:center;  
+    background:white;     
+    height:600rpx;  
+    width:686rpx;    
+    border-radius:15px;   
+    margin:146rpx auto;    
+}
+
+.default swiper .swiper-item-rec-triple .typeName{
+  font-size:32rpx;
+  font-weight: 900;
+  color:black; 
+  position: absolute;
+  top: 206rpx;left: 0;right: 0; 
+}
+.default .more{
+  height: 23rpx;
+  width: 13rpx;
+  margin-left: 15rpx;
+}
+
+.default swiper .swiper-item-rec-triple .productList {
+  /* margin: 150rpx 0 0 35rpx; */
+  position: absolute;
+  top: 296rpx;
+  width: 620rpx;
+  height: 367rpx;
+  left: 65rpx;
+}
+
+.default swiper .swiper-item-rec-triple .productList li{  
+   float:left;   
+   width: 196rpx;
+}
+
+.default swiper .swiper-item-rec-triple .productList li:nth-child(2){  
+   margin: 0 16rpx 0 16rpx;
+}
+
+.default swiper .swiper-item-rec-triple .productList li .Mess1{  
+  font-size:28rpx;
+  margin-top: 5rpx;
+  color: #222222;
+  text-align: left  ;
+}
+
+.default swiper .swiper-item-rec-triple .productList li .Mess2{  
+  font-size:26rpx;
+  margin-top: 5rpx;
+  color: #979797;
+  text-align: left;
+}
+
+.default swiper .swiper-item-rec-triple .productList li image{
+  width:196rpx;
+  height:276rpx;
+  border-radius: 5px;
+  
+}
+
+
+.default swiper .swiper-item-rec-fourth{  
+    text-align:center;  
+    background:white;     
+    height:746rpx;  
+    width:686rpx;    
+    border-radius:15px;   
+    margin:0 auto;     
+}
+
+.default swiper .swiper-item-rec-fourth .typeName{
+  font-size:32rpx;
+  font-weight: 900;
+  color:black; 
+  position: absolute;
+  top: 60rpx;left: 0;right: 0; 
+}
+
+.default swiper .swiper-item-rec-fourth .productList {
+  /* margin: 150rpx 0 0 35rpx; */
+  position: absolute;
+  top: 150rpx;
+  width: 580rpx;
+  height: 529rpx;
+  left: 85rpx;
+}
+
+.default swiper .swiper-item-rec-fourth .productList li:nth-child(2n-1){  
+   float:left;   
+}
+
+.default swiper .swiper-item-rec-fourth .productList li:nth-child(2n){  
+   float:right;   
+}
+
+.default swiper .swiper-item-rec-fourth .productList li:nth-child(n+3){  
+   margin-top: 37rpx;
+}
+
+.default swiper .swiper-item-rec-fourth .productList li .picCell{
+  height: 152rpx;
+}
+
+.default swiper .swiper-item-rec-fourth .productList li .Mess1{  
+  font-size:28rpx;
+  margin-top: 16rpx;
+  color: #222222;
+  text-align: left;
+  /* font-weight: 300; */
+}
+
+.default swiper .swiper-item-rec-fourth .productList li .Mess2{
+  
+  font-size:26rpx;
+  margin-top: 5rpx;
+  color: #979797;
+  text-align: left;
+}
+
+.default swiper .swiper-item-rec-fourth .productList li image{
+  width:271rpx;
+  height:152rpx;
+  border-radius: 5px;
+  
+}
+
+/* 公共样式 */
+
+swiper .swiper-item-rec-single .contMess .line1{    
+  display: none;
+} 
+
+swiper .swiper-item-rec-single .contMess .Mess1{
+  float:center;
+}
+
+
+swiper .swiper-item-rec-single .contMess .line2{    
+  display: none;
+}
+
+
+

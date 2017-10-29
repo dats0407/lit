@@ -1,0 +1,10 @@
+.search{
+    width:100%;
+    height: 100%;
+    background: white;
+}
+
+.seperator{
+  height:1px;
+  width: 100%;
+}

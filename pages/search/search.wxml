@@ -1,0 +1,41 @@
+
+<view class="search">
+  <input placeholder="请输入产品名称" />
+
+  <image class="seperator" src="../../image/seperator_light.png"></image>
+ 
+  <scroll-view scroll-y="true" style="height: 200px">
+   <text>热门搜索</text>
+    <view class="scrollViewItem">
+      <text>蓝牙耳机</text>     
+      <image class="seperator" src="../../image/seperator_light.png"></image>
+    </view>
+
+    <view class="scrollViewItem">
+      <text>运动相机</text>     
+      <image class="seperator" src="../../image/seperator_light.png"></image>
+    </view>
+
+    <view class="scrollViewItem">
+      <text>智能灭蚊灯</text>     
+      <image class="seperator" src="../../image/seperator_light.png"></image>
+    </view>
+
+    <view class="scrollViewItem">
+      <text>蓝牙耳机</text>     
+      <image class="seperator" src="../../image/seperator_light.png"></image>
+    </view>
+
+    <view class="scrollViewItem">
+      <text>蓝牙耳机</text>     
+      <image class="seperator" src="../../image/seperator_light.png"></image>
+    </view>
+
+    <view class="scrollViewItem">
+      <text>蓝牙耳机</text>     
+      <image class="seperator" src="../../image/seperator_light.png"></image>
+    </view>
+    
+  </scroll-view>
+
+ </view>

@@ -1,0 +1,14 @@
+page{
+  background: white;
+}
+
+.container{
+  background: white;
+  text-indent: 50rpx;
+  padding-top: 50rpx;
+}
+
+p{
+  height: 100%;
+  font-size: 35rpx;
+}

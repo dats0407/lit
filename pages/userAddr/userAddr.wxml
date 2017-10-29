@@ -1,0 +1,60 @@
+<view>
+  <form bindsubmit="save">
+    <view class='addrInfo'>
+      <view class='item editItem'>
+        收货人
+        <input placeholder="请输入收货人姓名"
+         name='userName'
+         maxlength='10'
+         value="{{userName=='undefined' ? '' : userName}}"/>
+      </view>
+      <image class="seperator_short" src="../../image/seperator_light.png"></image>
+
+      <view class='item editItem'>
+        <text>联系电话</text>
+        <input placeholder="请输入收货人联系电话"
+         name='phone'
+         maxlength='12'
+         value="{{phone=='undefined' ? '' : phone}}"/>
+      </view>
+      <image class="seperator_short" src="../../image/seperator_light.png"></image>
+
+      <view class='item selectItem'>
+        <text>区域</text>
+         <text class="selectArea" bindtap="open">{{province=='undefined'||province==''?'请选择区域':province}} {{city=='undefined'?'':city}} {{county=='undefined'?'':county}}</text> 
+        <!-- <text class="selectArea" bindtap="open">{{province}} {{city}} {{county}}</text> -->
+      </view>
+      <image class="seperator_short" src="../../image/seperator_light.png"></image>
+
+      <view class='item editItem'>
+        <text>详细地址</text>
+        <input placeholder="请输入收货人详细地址" 
+        maxlength='128'
+        name='detailAddr' 
+        value="{{detailAddr=='undefined' ? '' : detailAddr}}"/>
+      </view>
+      <image class="seperator_short" src="../../image/seperator_light.png"></image>
+    </view>
+
+    <button type="primary" formType="submit" size="default" loading="{{loading}}" plain="{{plain}}"
+          hover-class="other-button-hover"> 保存并使用 </button>
+  </form>
+</view>
+
+<view wx:if="{{condition}}" class="citypicker">
+  <picker-view indicator-style="height: 40px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange" class="citybody">
+    <view class="cityheader">
+      <view bindtap="open" class="city-cancel">取消</view>
+      <view bindtap="open" class="city-true">确定</view>
+    </view>
+    <picker-view-column>
+      <view wx:for="{{provinces}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+     <picker-view-column>
+      <view wx:for="{{citys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{countys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column> 
+  </picker-view>
+</view>

@@ -1,0 +1,7 @@
+<view class="{{style}}">
+	<view class="about">
+		<p>
+	    {{introduction}}
+		</p>
+	</view>
+</view>

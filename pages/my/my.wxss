@@ -1,0 +1,107 @@
+.container{    
+    width:100%;
+    height:100%;
+    
+   
+}
+
+.user{
+  width: 100%;
+  background: white;
+  padding: 35rpx 0 45rpx 0;
+}
+
+.user-avatar{
+    display:block;
+    width:128rpx;
+    height:128rpx;
+    border-radius:100rpx;
+    margin: auto;
+}
+
+
+
+.user-nickname{
+    text-align:center;
+    color:black;
+    width:100%;
+    display:inline-block;
+    font-size: 30rpx;
+    font-weight: 600;
+}
+
+.menu-item{
+  height: 146rpx;
+  line-height:146rpx;
+  background: white;
+  margin-bottom: 30rpx;
+  /* overflow: hidden;  */
+}
+
+.menu-item text{
+  font-size: 30rpx;
+  margin-left: 32rpx;
+  font-weight: 600;
+}
+
+.menu-item .more{
+  float: right;
+  height: 26rpx;
+  width: 15rpx;
+  margin: 60rpx 24rpx 0 0;
+}
+
+.contactBtn{
+  background-image: url('http://osteg9z4m.bkt.clouddn.com/CIS/icon/wxcustomer.png');
+  width: 46rpx;
+  height: 46rpx;
+  background-size: 46rpx 46rpx;
+  float: right;
+  margin: 50rpx 12rpx 0 0;
+  background-repeat: no-repeat; 
+  border-radius: 0px; 
+}
+
+button{
+  border: 0px;
+  background-color: red;
+}
+
+.item-icon{
+  height: 32rpx;
+  width: 32rpx;
+  margin:0 2rpx -4rpx 32rpx;
+
+}
+
+.contact{
+  margin-bottom: 0;
+}
+
+.seperator{
+  height:1px;
+  width: 716rpx;
+  padding: 0 0 0 32rpx; 
+  float:left;
+}
+
+/* .menu-item-1{
+  height: 146rpx;
+  line-height:146rpx;
+  background: white;
+  /* margin-bottom: 38rpx; */
+  /* overflow: se;  */
+/* } */
+
+/* .menu-item-1 text{
+  font-size: 30rpx;
+  margin-left: 25rpx;
+  font-weight: 600;
+}
+
+.menu-item-1 .more{
+  float: right;
+  height: 26rpx;
+  width: 15rpx;
+  margin: 60rpx 24rpx 0 0;
+}  */

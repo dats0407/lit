@@ -1,0 +1,44 @@
+<view class="container">
+    <block wx:for="{{videoArr}}" wx:key="productId">    
+      <view class="videoItem">
+        <video 
+          src="{{item.videoSrc}}" 
+          id="video{{item.id}}"                
+          style="display:{{item.videoVisibility}}"                   
+        >
+        </video>  
+
+        <view class="videoImgView"  bindtap="startPlay" data-id="{{item.id}}"
+          style="display:{{item.imageVisibility}};background:url({{item.coverImg}});background-size: 100% 420rpx;"        
+          >
+          <text>{{item.title}}</text>        
+          <image class="playImg" src="../../image/videoplay.png"/>
+        </view>  
+
+        <view class="videoBottom">
+          <ul>
+            <navigator url="../products/products">
+              <li><text>{{item.label1}}</text></li>
+            </navigator>
+            <navigator url="../products/products">
+              <li><text>{{item.label2}}</text></li>
+            </navigator>
+            <!-- <li><image src="../../image/share.png"/></li>
+            <li><image src="../../image/comment.png"/></li> -->
+          </ul>
+        </view>          
+      </view>  
+    </block>
+
+    
+
+    
+
+    
+
+
+
+
+
+  </view>
+  

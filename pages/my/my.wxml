@@ -1,0 +1,90 @@
+<view class="container">
+
+  <!-- <view class="user">
+        <image class="user-avatar" src="http://wx.qlogo.cn/mmhead/qaSJ7jX4A12zYzbHdlHaYYlLlOcZ8Nf9PKO41r3m1jk/0" />
+        <view class="user-nickname">李泽宇</view>
+        
+    </view>
+    <image class="seperator" src="../../image/seperator_light.png"></image> -->
+
+  <view class="menu">
+      <view class="menu-item" bindtap="toCompanyInc">
+        <image class="item-icon" src="../../image/company-introduction.png"></image>
+        <text>公司介绍</text>
+        <image class="more" src="../../image/more.png"></image>
+        <view class="seperatorView"></view>
+      </view>
+    <!-- <navigator url="../contactus/contactus">
+       <view class="menu-item">
+        <text>联系我们</text>        
+        <image class="more" src="../../image/more.png"></image>     
+        <view class="seperatorView"></view>
+      </view> 
+    </navigator> -->
+    <!-- <navigator url="../address/address">
+      <view class="menu-item contact">
+        <image class="item-icon" src="../../image/address.png"></image>
+        <text>公司地址</text>
+        <image class="more" src="../../image/more.png"></image>
+      </view>
+    </navigator> -->
+   
+     <image class="seperator" src="../../image/seperator_light.png"></image>
+
+    <!-- <navigator url="../customercall/customercall"> -->
+      <view class="menu-item contact" bindtap="toContactTel">
+        <image class="item-icon" src="../../image/Service-tel-.png"></image>  
+        <text>客服电话</text>
+        <image class="more" src="../../image/more.png"></image>
+      </view>
+    <!-- </navigator> -->
+
+     <image class="seperator" src="../../image/seperator_light.png"></image>
+
+     <view class="menu-item">
+      <image class="item-icon" src="../../image/WeChat-consulting.png"></image>
+      <text>微信咨询</text>
+      <button class="contactBtn" open-type="contact" plain="true" size="mini" style="border:0px;padding:0"></button>
+    </view>
+
+    <view class="menu-item" bindtap="toOrderlist">
+      <image class="item-icon" src="../../image/orderlist-icon.png"></image>
+      <text>我的订单</text>
+      <image class="more" src="../../image/more.png"></image>
+    </view>
+
+
+       <view class="menu-item" bindtap='toAbout'>
+        <image class="item-icon" src="../../image/about-us.png"></image>
+        <text>关于</text>
+        <image class="more" src="../../image/more.png"></image>
+      </view> 
+
+       <view class="menu-item" bindtap='toImpression'>
+        <image class="item-icon" src="../../image/impression-icon.png"></image>
+        <text>产品印象</text>
+        <image class="more" src="../../image/more.png"></image>
+      </view>
+
+      <view class="menu-item" bindtap='toErweima'>
+        <image class="item-icon" src="../../image/qrcode-icon.png"></image>
+        <text>二维码</text>
+        <image class="more" src="../../image/more.png"></image>
+      </view> 
+
+
+       <view class="menu-item" bindtap='toCoupon'>
+        <image class="item-icon" src="../../image/coupons-icon.png"></image>
+        <text>优惠券</text>
+        <image class="more" src="../../image/more.png"></image>
+      </view> 
+
+
+    <!-- <view class="menu-item">
+        <text>我的收藏</text>        
+        <image class="more" src="../../image/more.png"></image>     
+      </view>    -->
+  </view>
+
+
+</view>

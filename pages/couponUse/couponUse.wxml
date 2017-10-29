@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="titleBar">
+    <image class="portrait" src="../../image/comment_portrait.png"></image>
+    <text class="titleText">苗邀请你一起领取</text>
+  </view>
+
+  <view class="coupon">
+    <text class="couTitle">恭喜你获得</text>
+    <image class="logo" src="../../image/comment_portrait.png"></image>
+    <text class="couponTitle">博浪小程序下单优惠立减金</text>
+    <text class="couponSlogan">{{couponName}}</text>
+    <button class="receiveBtn" bindtap="use">使用优惠</button>
+  </view>
+
+
+  <button open-type="share" class="shareBtn">转发分享</button>
+</view>

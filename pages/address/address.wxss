@@ -1,0 +1,20 @@
+.container{
+  background: white;
+}
+
+.addressText{
+  padding-top: 50rpx;
+  font-weight: 600;
+  font-size: 35rpx;
+  display:block;
+}
+
+.detailAddress{
+  font-size: 31rpx;
+}
+
+.addressBar{
+  padding-left: 32rpx;
+  height: auto;
+  overflow: hidden;
+}

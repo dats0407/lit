@@ -1,0 +1,9 @@
+page{
+  background: white;
+}
+
+.about{
+  height: 100%;
+  margin: 50rpx auto;
+  font-size: 28rpx;
+}

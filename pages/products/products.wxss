@@ -1,0 +1,52 @@
+page{
+ background: white;
+}
+
+
+
+.listView{
+  padding: 53rpx 32rpx 83rpx 32rpx;
+  overflow:hidden;
+}
+
+
+.listView li{
+  float:left;
+  list-style-type:none;
+  padding-bottom: 30rpx;
+}
+
+.listView li:last-child{
+  padding-bottom: 0rpx;
+}
+
+
+.listView li image{
+  height: 148rpx;
+  width: 260rpx;
+  border-radius:5px;  
+  float:left; 
+  margin-right:25rpx;
+}
+
+.listView li text{
+  font-size: 30rpx;
+  color: black;
+  vertical-align: middle;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height:40rpx；
+}
+
+.name{
+  margin-top: 30rpx;
+}
+
+.slogan{
+  margin-top: 10rpx;
+  color: #979797;
+}

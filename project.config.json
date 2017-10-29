@@ -1,0 +1,40 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true
+	},
+	"compileType": "weapp",
+	"libVersion": "1.5.4",
+	"appid": "wx27d3262a9f105b21",
+	"projectname": "bolang",
+	"condition": {
+		"weapp": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "findedit",
+					"pathName": "pages/findedit/findedit",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "find",
+					"pathName": "pages/find/find",
+					"query": ""
+				}
+			]
+		},
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

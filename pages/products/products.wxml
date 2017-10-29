@@ -1,0 +1,14 @@
+<view class="products">
+  <view class="listView">
+        <ul>
+          <block wx:for="{{productArr}}" wx:for-item="cell">    
+              <li bindtap="toProduct" data-productid="{{cell.productId}}">
+                <image src="{{cell.bgUrl}}"/>
+                <text class="name">{{cell.productName}}</text>
+                <text class="slogan">{{cell.slogan}}</text>
+              </li>
+          </block>
+        </ul>     
+
+  </view>
+</view>

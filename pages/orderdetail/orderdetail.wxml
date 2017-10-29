@@ -1,0 +1,107 @@
+<view class="payment">
+  <view class="userAddr">
+    <image class="addrImg" src='../../image/user_addr.png'></image>
+    <text class='userInfo'>{{order.contactName}}   {{order.phoneNum}}</text>
+    <text class='addrInfo'>{{order.areaInfo}}</text>
+  </view>
+
+  <view class='orderInfo'>
+    <view class="companyInfo">
+      <image src='../../image/gm_logo.png'></image>
+      <text>{{xcxName}}</text>
+    </view>
+    <image class="seperator" src="../../image/seperator_light.png"></image>
+
+    <view class="productInfo">
+      <view class="pImg">
+        <image src="{{orderItems[0].product.picUrl}}"></image>
+      </view>
+      <text class="pName">{{orderItems[0].product.name}}</text>
+      <text class="pDesc">{{orderItems[0].product.description}}</text>
+      <view class="priceInfo">
+        <text class="pPrice">¥{{productPrice}}</text>
+        <text class="pQuantity">×{{orderItems[0].quantity}}</text>
+      </view>
+    </view>
+
+    <image class="seperator_short" src="../../image/seperator_light.png"></image>
+
+  </view>
+
+  <view class="orderSettlement">
+    <view class="osItem">
+      <text>商品金额</text>
+      <text class="osItemPrice">¥{{productTotalPrice}}</text>
+    </view>
+    <view class="osItem">
+      <text>优惠券</text>
+      <text class="osItemPrice">- ¥{{couponValue}}</text>
+    </view>
+    <view class="osItem">
+      <text>运费</text>
+      <text class="osItemPrice">+ ¥{{postageValue}}</text>
+    </view>
+
+    <image class="seperator" src="../../image/seperator_light.png" style="padding:0"></image>
+    <view class="clear"></view>
+
+    <view class="sumStr">
+      <text class="sumText">共1件,合计:</text>
+      <text class="sumPrice">¥{{orderPrice}}</text>
+    </view>
+
+  </view>
+
+  <view class="methodInfo">
+    <view>
+      <text>配送方式</text>
+      <text class="value">快递</text>
+    </view>
+    <image class="seperator_short" src="../../image/seperator_light.png"></image>
+    <view>
+      <text>支付方式</text>
+      <text class="value">微信支付</text>
+    </view>
+  </view>
+
+  <view class="orderDetailInfo">
+    <view>
+      <text>订单编号</text>
+      <text class="value">{{order.orderNo}}</text>
+    </view>
+    <view>
+      <text>下单时间</text>
+      <text class="value">{{orderTime}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{order.state==4 || order.state==10}}" class="orderDetailInfo">
+    <view>
+      <text>快递公司</text>
+      <text class="value">{{postageTypeStr}}</text>
+    </view>
+    <view>
+      <text>快递单号</text>
+      <text class="value">{{order.postageNo}}</text>
+    </view>
+  </view>
+
+  <view>
+    <view class="opBtn" wx:if="{{order.state==1}}">
+      <button  type="primary" loading="{{loading}}"
+       plain="{{plain}}" hover-class="other-button-hover" bindtap="payNow"> 微信支付 </button>
+       <button class="cancelBtn" loading="{{loading}}"
+       plain="{{plain}}" hover-class="other-button-hover" bindtap="cancelOrder"> 取消订单 </button>
+    </view>
+    <view class="opBtn" wx:if="{{order.state==2}}">
+      <button  loading="{{loading}}" 
+      plain="{{plain}}" hover-class="other-button-hover" bindtap="remindDelivery"> 提醒发货 </button>
+    </view>
+    <view class="opBtn" wx:if="{{order.state==4}}">
+      <button loading="{{loading}}" 
+      plain="{{plain}}" hover-class="other-button-hover" bindtap="confirmReceipt"> 确认收货 </button>
+    </view>
+  </view>
+
+
+</view>

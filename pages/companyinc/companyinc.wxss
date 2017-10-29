@@ -1,0 +1,15 @@
+page{
+  background: white;
+  text-indent: 50rpx;
+  padding-top: 50rpx;
+ 
+}
+
+p{
+  height: 100%;
+  font-size: 32rpx;
+}
+
+view{
+   padding: 0 25rpx 0 25rpx;
+}

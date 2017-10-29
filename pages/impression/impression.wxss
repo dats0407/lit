@@ -1,0 +1,136 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: #393c45;
+}
+
+.portrait {
+  width: 150rpx;
+  height: 150rpx;
+  border: 0 solid #f00;
+  border-radius: 100rpx;
+  /* background-color: #f10b2e; */
+  margin: 0 auto;
+  display: block;
+  margin-top: 43rpx;
+}
+
+.qrcodeBtn {
+  float: right;
+  width: 130rpx;
+  height: 80rpx;
+  margin-right: 2px;
+  position: fixed;
+  padding: 0px;
+  z-index: 90;
+  top: 10%;
+  right: -2px;
+  border: 0px;
+  color: #fff;
+}
+
+.mainTitle {
+  font-size: 33rpx;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.subTitle {
+  font-size: 29rpx;
+  color: #979797;
+  display: block;
+  text-align: center;
+  margin-top: 3rpx;
+}
+
+.table {
+  border: 0px solid darkgray;
+  padding: 0 20rpx 0 20rpx;
+  margin-top: 35rpx;
+}
+
+.tr {
+  display: flex;
+  width: 100%;
+  /* justify-content: center; */
+  /* height: 5rem; */
+  height: 138rpx;
+  align-items: center;
+  /* padding: 0 20rpx 0 20rpx; */
+}
+
+.td {
+  justify-content: center;
+  margin: 12rpx;
+  font-size: 25rpx;
+  border-radius: 15rpx;
+  height: 119rpx;
+  color: white;
+  text-align: center;
+  width: 119rpx;
+}
+
+.normal {
+  background: #555861;
+  line-height: 120rpx;
+}
+
+.hasNum {
+  background: #079714;
+}
+
+.ioted {
+  /* font-size: 25rpx; */
+  border: 2px solid #079714;
+  background: #555861;
+  width: 115rpx;
+  height: 115rpx;
+}
+
+.not-voted {
+  /* font-size: 25rpx; */
+}
+
+.voted {
+  border: 8rpx solid green;
+  box-sizing: border-box;
+}
+
+.voteNum {
+  display: block;
+  font-size: 42rpx;
+  font-weight: 600;
+}
+
+.voted .voteNum {
+  padding: 0rpx 0 1rpx 0;
+}
+
+.not-voted .voteNum {
+  padding: 8rpx 0 1rpx 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.zhuanfa_btn {
+  position: relative;
+  color: white;
+  background-color: #393c45;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1rpx solid #e5e5e5;
+  font-size: 16px;
+  line-height: 45px;
+  height: 45px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  width: 87%;
+  margin-top: 20px;
+}

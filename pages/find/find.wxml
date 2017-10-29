@@ -1,0 +1,82 @@
+<view class="container">
+  <view class="title">
+    <image src="{{titleImg}}" />
+  </view>
+  <view class="scroll_item">
+    <view wx:for="{{findArr}}" wx:key="id" wx:for-item="item">    
+      <view class="findItem">
+        <view class="userTitle">
+         <image src="{{item.userAvator}}" /> 
+         <view class="userTitleSub">
+          <view>
+            <text class="username">{{item.userName}}</text>
+          </view>
+          <view>
+            <text class="datetime">{{item.createTime}}</text>
+          </view>
+         </view>
+          <view  class=" menuicon">
+            <image bindtap="showMenu" data-id="{{item.id}}" src="../../image/menu.png" />
+          </view>
+
+          <view class="menuaction {{item.menuShow}}" bindtap="deleteFind" data-id="{{item.id}}" >
+            <text>删除</text>
+          </view>
+        </view>
+        <view class="content">
+
+          <view wx:if="{{item.content}}">
+            <text>
+            {{item.content}}
+            </text>
+          </view>
+
+          <view wx:if="{{item.thumbnailPics}}">
+            <view class="content_img">
+              <view wx:for="{{item.thumbnailPicsArr}}" wx:key="img" wx:for-item="imgItem">
+                <image src="{{imgItem}}" style="{{item.thumImgStyle}}" bindtap="previewImage" data-src="{{imgItem}}" data-id="{{item.id}}"/>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="action">
+          <view class="zan" bindtap="zan" data-id="{{item.id}}">
+            <image src="{{item.handImg}}"/>
+          </view>
+
+          <view class="zannum">
+            <text>{{item.thumbsUp}}</text>
+          </view>
+
+          <view class="comment" bindtap="goToComment" data-id="{{item.id}}">
+            <image src="../../image/find_comment.png"/>
+          </view>
+
+        </view>
+           
+        <view class="comment_list">
+          <block  wx:for="{{item.comments}}" wx:key="id" wx:for-item="commentitem">
+            <view class="comment_item">
+              <text class="user_title">{{commentitem.nickName}}</text>
+              <text class="comment_fig">：</text>
+              <text class="comment_cont">{{commentitem.comment}}</text>
+            </view>
+          </block>
+        </view>  
+        <view class="commentaddmore {{item.addmoreClassName}}" bindtap="loadMoreFindComment" data-id="{{item.id}}">
+            <text>点击加载更多>></text>
+        </view>
+        <view class="line"></view>  
+
+      </view>  
+    </view>
+    </view>
+
+    <navigator url="../findedit/findedit" class="addNav">
+      <view class="addIcon">
+        <image src="../../image/find_add.png" />
+      </view>
+    </navigator>
+  </view>
+  

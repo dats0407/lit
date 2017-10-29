@@ -1,0 +1,228 @@
+.userAddr{
+  background: white;
+  margin-top: 30rpx;
+  padding: 35rpx;
+}
+
+.userAddr .userInfo{
+  display: block;
+  font-size: 32rpx;
+  margin-left: 55rpx;
+  font-weight: 600;
+}
+
+.userAddr .addrInfo{
+  display: block;
+  font-size: 26rpx;
+  margin-left: 55rpx;
+  margin-top: 15rpx;
+  width: 550rpx;
+}
+
+.userAddr .addrImg{
+  float: left;
+  height: 38rpx;
+  width: 30rpx;
+}
+
+.userAddr .userAddrInfo{
+  margin-left: 55rpx;
+}
+
+.userAddr .moreImg{
+  height: 26rpx;
+  width: 20rpx;
+  float: right;
+   margin: -15rpx 8rpx 0 0; 
+}
+
+.userAddr .remind{
+  color: orange;
+  font-size: 26rpx;
+  margin-left: 55rpx;
+}
+
+.seperator{
+  height:1px;
+  width: 100%;
+  float:left;
+}
+
+.seperator_short{
+  height:1px;
+  width: 725rpx;
+  padding-left: 25rpx;
+  float:left;
+}
+
+.orderInfo{
+  background: white;
+  margin-top: 35rpx;
+}
+
+.orderInfo .companyInfo image{
+  height: 36rpx;
+  width: 36rpx;
+  margin-bottom: -3rpx;
+}
+
+.orderInfo .companyInfo text{
+  height: 38rpx;
+  width: 30rpx;
+  font-size: 26rpx;
+  margin-left: 15rpx;
+}
+
+.companyInfo{
+  padding: 25rpx;
+}
+
+.productInfo{
+  padding: 55rpx 25rpx 45rpx 25rpx;
+  font-size: 26rpx;
+  height: 120rpx;
+}
+
+.productInfo text{
+   display: block;
+   margin-left: 125rpx;
+}
+
+.productInfo .pDesc{
+  width: 245px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.productInfo image{
+  width: 82rpx;
+  height: 112rpx;
+  float: left;
+  border: thin solid #979797;
+}
+
+.productInfo .priceInfo{
+  float: right;
+   margin: -55rpx -2rpx 0 0 
+}
+
+.productInfo .pPrice{
+  color: #ff6300;
+}
+
+.productInfo .pQuantity{
+  color: #979797;
+  float:right;
+}
+
+.quantityInfo{
+  padding: 25rpx
+}
+
+.quantityInfo text{
+  font-size: 32rpx;
+}
+
+.quantityInfo input{
+  float: right;
+  width: 55rpx;
+  border: thin solid #979797;
+  text-align: center;
+}
+
+.orderMsg{
+  padding: 25rpx
+}
+
+.orderMsg text{
+  font-size: 32rpx;
+}
+
+.orderMsg input{
+  float: right;
+  font-size: 25rpx;
+  margin-right: 175rpx;
+  width: 350rpx;
+}
+
+.orderSettlement{
+  padding: 25rpx;
+  font-size: 25rpx;
+  color: #979797;
+  background: white;
+  height: 245rpx;
+}
+
+
+.orderSettlement .osItem{
+  margin-bottom: 25rpx;
+}
+
+.orderSettlement .osItem .osItemPrice{
+  float: right;
+}
+
+.orderSettlement .sumStr{
+  margin-top: 25rpx;
+  float: right;
+  font-size: 35rpx;
+}
+
+.orderSettlement .sumText{
+  font-weight: 450rpx;
+  color: black;
+}
+
+.orderSettlement .sumPrice{
+  margin-left: 25rpx;
+  color: #ff6300;
+}
+
+button{
+  margin-top: 55rpx;
+  width: 87%;
+  height: 90rpx;
+  margin-bottom: 30rpx;
+}
+.cancelBtn{
+  margin-top: 30rpx;
+  margin-bottom: 80rpx;
+}
+.methodInfo{
+  background: white;
+  margin-top: 25rpx;
+  font-size: 26rpx;
+}
+
+.methodInfo view{
+  padding: 25rpx;
+}
+
+.methodInfo .value{
+  float: right;
+}
+
+.orderDetailInfo{
+  background: white;
+  margin-top: 25rpx;
+  margin-bottom: 30rpx;
+  font-size: 26rpx;
+  color: #979797;
+}
+
+.orderDetailInfo view{
+  padding: 25rpx;
+}
+
+.orderDetailInfo .value{
+  float: right;
+}
+
+.clear{
+   clear:both
+}
+
+.opBtn{
+  height: 280rpx;
+}

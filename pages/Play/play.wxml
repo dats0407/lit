@@ -1,0 +1,146 @@
+<view class="play">
+    <view wx:if="{{hasVideo}}">
+      <video src="{{videoSrc}}" custom-cache="{{false}}"></video>
+    </view>
+    <view wx:else>
+      <swiper autoplay="true" indicator-dots="ture">
+        <block wx:for="{{lunboPics}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+      <view class="titleBar">               
+          <text class="productName">{{name}}</text> 
+            <image class="detailMore" src="../../image/more_grey.png"></image>           
+           <text class="detailText" bindtap="showDetailDesc">简介</text> 
+      </view>
+       <view class="breifContent">                
+           <text>{{desc}}</text>           
+       </view>  
+       <view class="buttonBar">
+        <ul>
+          <!-- <li><image bindtap="favorite" src="../../image/favorite.png"></image></li> -->
+          <li><image bindtap="showShareToast" src="../../image/share_light.png"></image></li>          
+        </ul>
+      </view> 
+
+      <image class="seperator" src="../../image/seperator_dark.png"></image>
+    
+       <!-- <view class="listView videoList">
+        <view class="subtitle"><text>视频短片</text></view>
+        <ul>
+          <li>
+            <image src="http://osteg9z4m.bkt.clouddn.com/1-1.jpg" bindtap="toVideo"/>
+            <text bindtap="toVideo">产品展示：极致工艺</text>
+          </li>
+          <li>
+            <image src="http://osteg9z4m.bkt.clouddn.com/2-1.jpg" bindtap="toVideo"/>
+            <text bindtap="toVideo">产品展示：极致工艺设计，工厂全新流水线工厂全新流水线工厂全新流水线</text>
+          </li>
+           <li>
+            <image src="http://osteg9z4m.bkt.clouddn.com/3-1.jpg" bindtap="toVideo"/>
+            <text bindtap="toVideo">项目介绍：大连万达项目展示</text>
+          </li>
+           <li>
+            <image src="http://osteg9z4m.bkt.clouddn.com/4-1.jpg" bindtap="toVideo"/>
+            <text bindtap="toVideo">工厂展示：极致工艺设计，工厂全新流水线</text>  
+            </li>    
+        </ul>     
+      </view>   -->
+
+      <image class="seperator" src="../../image/seperator_dark.png"></image> 
+  
+      <view class="listView detailImgList">
+      <view class="subtitle"><text>产品图片</text></view>
+      <ul>
+        <block wx:for="{{detailPics}}" wx:for-item="cell"> 
+        <li><image src="{{cell}}"></image></li>
+          <!-- <li><image src="http://osteg9z4m.bkt.clouddn.com/detail-1.jpg"></image></li>
+          <li><image src="http://osteg9z4m.bkt.clouddn.com/detail-2.jpg"></image></li>
+          <li><image src="http://osteg9z4m.bkt.clouddn.com/detail-3.jpg"></image></li>
+          <li><image src="http://osteg9z4m.bkt.clouddn.com/detail-4.jpg"></image></li> -->
+        </block>
+        </ul>
+      </view>
+
+      <!-- <image class="seperator" src="../../image/seperator_dark.png"></image> -->
+
+      <!-- <view class="listView recommendList">
+        <view class="subtitle"><text>同类推荐</text></view>
+        <view class="recommendul">
+          <ul>
+            <li>
+              <navigator url="../Play/play?productId=5" hover-class="none">   
+                <view class="picCell"><image src="http://osteg9z4m.bkt.clouddn.com/5-1.jpg" /></view>
+                  <view class="contMess">
+                    <text class="Mess1">运动跑步</text>
+                    <text class="Mess2">健身新理念</text>        
+                  </view>
+              </navigator>
+            </li>     
+            <li>
+            <navigator url="../Play/play?productId=6" hover-class="none"> 
+                <view class="picCell"><image src="http://osteg9z4m.bkt.clouddn.com/6-1.jpg" /></view>
+                  <view class="contMess">
+                    <text class="Mess1">DOSS S05</text>
+                     <text class="Mess2">用心倾听</text>        
+                  </view>
+                   </navigator>
+            </li>     
+             <li>
+             <navigator url="../Play/play?productId=7" hover-class="none"> 
+                <view class="picCell"><image src="http://osteg9z4m.bkt.clouddn.com/7-1.jpg" /></view>
+                  <view class="contMess">
+                    <text class="Mess1">DOSS S06</text>
+                     <text class="Mess2">耳挂式蓝牙耳机</text>        
+                  </view>
+                   </navigator>
+            </li>     
+             <li>
+             <navigator url="../Play/play?productId=8" hover-class="none"> 
+                <view class="picCell"><image src="http://osteg9z4m.bkt.clouddn.com/8-1.jpg" /></view>
+                  <view class="contMess">
+                    <text class="Mess1">蓝牙音响</text>
+                     <text class="Mess2">家庭生活居家音乐独享</text>        
+                  </view>
+                   </navigator>
+            </li>      
+          </ul>
+          </view>
+       </view>  -->
+
+
+       <!-- <image class="seperator" src="../../image/seperator_dark.png"></image> -->
+
+        <!-- <view class="comment">
+
+        <view class="commentBar">
+          <image src="../../image/comment_portrait.png"></image>
+           <input type="text" placeholder="请告诉我们您对产品的看法吧"/>
+        </view>
+      
+      </view>   -->
+
+      <image wx:if="{{openPay}}" class="buynow" src="../../image/buynow.png" bindtap='toPayment'></image>
+      <view class="cover {{showMoreContent ? '_show' : '_hide'}}" bindtap="hideMore"></view>
+
+      <view class="moreContent {{moreContentMove ? 'moreContentMove _show' : 'moreContentHide _hide'}}">
+          <!-- <p class="title">自拍杆</p> -->
+           <text bindtap="hideMore">{{popContent}}</text>
+        </view>
+      <!-- <button id="contactBtn" open-type="contact" plain="true" size="mini">
+        <image bindtap="find" src="../../image/support.png"></image>
+      </button> -->
+
+      <button id="contactBtn"  plain="true" size="mini" style="border:0px" bindtap="toContactTel">
+        <image bindtap="find" src="../../image/phone-contact.png"></image>
+      </button>
+
+
+    
+    
+
+
+</view>

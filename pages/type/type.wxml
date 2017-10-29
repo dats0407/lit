@@ -1,0 +1,36 @@
+<import src="../../common/template.wxml" />
+
+<view class="type">
+  <block wx:for="{{typeArr}}">
+    <view class="typeItem">
+      <view bindtap="toTypeProduct" data-id="{{item.id}}">
+        <text class="typeName">{{item.name}}</text>
+        <image class="more" src="../../image/more.png"></image>
+      </view>
+      <view class="productList">
+        <ul>
+          <block wx:for="{{item.products}}" wx:for-item="cell">
+            <li>
+              <navigator url="../Play/play?productId={{cell.productId}}" hover-class="none">
+                <view class="picCell">
+                  <image src="{{cell.bgUrl}}" />
+                </view>
+                <view class="contMess">
+                  <text class="Mess1">{{cell.productName}}</text>
+                  <text class="Mess2">{{cell.slogan}}</text>
+                </view>
+              </navigator>
+            </li>
+          </block>
+        </ul>
+        <image class="seperator" src="../../image/seperator_light.png"></image>
+      </view>
+    </view>
+  </block>
+
+
+
+
+
+
+</view>

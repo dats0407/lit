@@ -1,0 +1,87 @@
+<view class="payment">
+  <view class="userAddr" bindtap='toUserAddr'>
+    <image class="addrImg" src='../../image/user_addr.png'></image>
+    <text class='userInfo'>{{userName==''?'选择地址':userName}}   {{phone==''?'':phone}}</text>
+    <text class='addrInfo'>{{detailAddrStr}}</text>
+    <text class='remind'>(请确认您的地址信息无误后再付款)</text>
+    <image class="moreImg" src='../../image/more_grey.png'></image>
+  </view>
+
+  <form bindsubmit="pay">
+    <view class='orderInfo'>
+      <view class="companyInfo">
+        <image src='../../image/gm_logo.png'></image>
+        <text>{{xcxName}}</text>
+      </view>
+      <image class="seperator" src="../../image/seperator_light.png"></image>
+
+      <view class="productInfo">
+        <view class="pImg">
+          <image src="{{picUrl}}"></image>
+        </view>
+        <text class="pName">{{productName}}</text>
+        <text class="pDesc">{{productDesc}}</text>
+        <view class="priceInfo">
+          <text class="pPrice">¥{{productPrice}}</text>
+          <text class="pQuantity">×{{quantity}}</text>
+        </view>
+      </view>
+
+      <image class="seperator_short" src="../../image/seperator_light.png"></image>
+
+
+      <view class="quantityInfo">
+        <text>购买数量</text>
+        <image class="plus_icon" bindtap="plusQuantity" src="../../image/plus_icon.png"></image>
+        <input type="digit" bindblur="inputQuantity" name="productQuantity" value="{{quantity}}" />
+        <image class="minus_icon" bindtap="minusQuantity" src="../../image/minus_icon.png"></image>
+      </view>
+
+      <image class="seperator_short" src="../../image/seperator_light.png"></image>
+      <view class="orderMsg">
+        <text>买家留言</text>
+        <input type="text" name="orderMessage" placeholder="可以告诉卖家对商品的特殊需求" />
+      </view>
+
+      <image class="seperator_short" src="../../image/seperator_light.png"></image>
+      <view wx:if="{{hasCoupon}}" class="orderMsg">
+        <text>优惠券</text>
+        <text class="couponText">已使用{{couponValue}}元优惠券</text>
+      </view>
+
+
+      <!-- <image class="seperator_short" src="../../image/seperator_light.png"></image>
+      <view class="orderMsg">
+        <text>优惠券</text>
+        <input type="text" name="orderMessage" placeholder="可以告诉卖家对商品的特殊需求" />
+      </view> -->
+
+    </view>
+
+    <view class="orderSettlement">
+      <view class="osItem">
+        <text>商品金额</text>
+        <text class="osItemPrice">¥{{productTotalPrice}}</text>
+      </view>
+      <view class="osItem">
+        <text>优惠券</text>
+        <text class="osItemPrice">- ¥{{couponValue}}</text>
+      </view>
+      <view class="osItem">
+        <text>运费</text>
+        <text class="osItemPrice">+ ¥{{postageValue}}</text>
+      </view>
+
+      <image class="seperator" src="../../image/seperator_light.png" style="padding:0"></image>
+
+      <view class="sumStr">
+        <text class="sumText">共{{quantity}}件,合计:</text>
+        <text class="sumPrice">¥{{orderPrice}}</text>
+      </view>
+
+    </view>
+
+    <button type="primary" loading="{{btnLoading}}" disabled="{{btnDisabled}}" plain="{{plain}}" formType="submit" hover-class="other-button-hover"> 微信支付 </button>
+
+  </form>
+</view>

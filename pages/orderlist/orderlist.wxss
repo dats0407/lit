@@ -1,0 +1,163 @@
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  line-height: 90rpx;
+  background: white;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 25%;
+  color: #777;
+}
+
+.on {
+  color: #ff6300;
+  border-bottom: 5rpx solid #ff6300;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.order-item {
+  margin: 35rpx 0 35rpx 0;
+  background: white;
+}
+
+.order-item .companyInfo image {
+  height: 36rpx;
+  width: 36rpx;
+  margin-bottom: -3rpx;
+}
+
+.order-item .companyInfo text {
+  height: 38rpx;
+  font-size: 26rpx;
+  margin-left: 15rpx;
+}
+
+.order-item .companyInfo .orderState {
+  color: #ff6300;
+  float: right;
+  margin-top: 15rpx;
+  margin-right: 2rpx;
+}
+
+.companyInfo {
+  padding: 25rpx;
+}
+
+.seperator {
+  height: 1px;
+  width: 100%;
+  float: left;
+}
+
+.seperator_short {
+  height: 1px;
+  width: 725rpx;
+  padding-left: 25rpx;
+  float: left;
+}
+
+.productInfo {
+  padding: 55rpx 25rpx 45rpx 25rpx;
+  font-size: 26rpx;
+  height: 120rpx;
+}
+
+.productInfo text {
+  display: block;
+  margin-left: 125rpx;
+}
+
+.productInfo .pDesc {
+  width: 245px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.productInfo image {
+  width: 82rpx;
+  height: 112rpx;
+  float: left;
+  border: thin solid #979797;
+}
+
+.productInfo .priceInfo {
+  float: right;
+  margin: -55rpx -2rpx 0 0;
+}
+
+.productInfo .pPrice {
+  color: #ff6300;
+}
+
+.productInfo .pQuantity {
+  color: #979797;
+  float: right;
+}
+
+.sumStr {
+  font-size: 35rpx;
+  padding: 25rpx;
+}
+
+.sumStr .sumText {
+  font-weight: 450;
+  color: black;
+  float: right;
+  margin-bottom: 25rpx;
+}
+
+.sumStr .sumPrice {
+  margin-left: 25rpx;
+  color: orange;
+}
+
+.clear {
+  clear: both;
+}
+
+.opBtn {
+  padding: 25rpx;
+  height: 45rpx;
+}
+
+.opBtn .opStr {
+  font-size: 26rpx;
+  border: 1px solid #979797;
+  border-radius: 10rpx;
+  float: right;
+  padding: 5rpx 12rpx 5rpx 12rpx;
+  Margin-left: 10rpx;
+}
+
+
+
+.opBtn .payStr {
+  font-size: 26rpx;
+  border: 1px solid #ff6300;
+  border-radius: 10rpx;
+  float: right;
+  padding: 5rpx 12rpx 5rpx 12rpx;
+  Margin-left: 10rpx;
+  color: #ff6300;
+}
+
+.noOrders {
+  text-align: center;
+  height: 35rpx;
+  font-size: 25rpx;
+  margin-top: 25rpx;
+}
+
+.noOrderHide{
+  visibility: hidden
+}
